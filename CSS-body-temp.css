@@ -1,0 +1,101 @@
+/* HTMLに呼び出すときは<link rel="stylesheet"href="CSS-body-temp.css"> */
+
+/* 本文の基本スタイル */
+body {
+  font-family: 'Arial', sans-serif; /* フォントの種類 */
+  font-size: 16px; /* フォントサイズ */
+  color: #000000; /* フォントカラー（暗めの灰色） */
+  line-height: 1.6; /* 行間（読みやすさを考慮） */
+  text-align: left; /* 文章の位置（左寄せ） */
+  margin: 0;
+  padding: 0;
+  background-color: #c98787; /* 背景色を設定 */
+      background-image: url("");/* ←背景画像パスに置き換える。同一フォルダならファイル名 */
+      background-size: cover;
+      background-position: center;
+}
+
+/* パラグラフ（pタグ）のスタイル */
+p {
+  margin-bottom: 16px; /* 各段落の下に余白 */
+  text-align: justify; /* 両端揃え（整列） */
+  color: #000000; /* 濃いグレー */
+}
+
+/* 見出し（h1, h2, h3 など）のスタイル */
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ff0000; /* 見出しは少し濃い色 */
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em; /* h1は大きめ */
+}
+
+h2 {
+  font-size: 1.5em; /* h2は少し小さめ */
+}
+
+/* リスト（ul, ol）のスタイル */
+ul, ol {
+  margin: 20px 0;
+  padding-left: 20px; /* 左側のインデント */
+}
+
+li {
+  margin-bottom: 8px; /* 各リストアイテムの下に少し余白 */
+}
+
+/* 強調（強調文字や重要なテキスト） */
+strong {
+  font-weight: bold;
+  color: #d14; /* 強調部分は赤っぽい色 */
+}
+
+em {
+  font-style: italic; /* イタリック体 */
+  color: #444; /* イタリック体のテキスト色 */
+}
+
+/* 本文の余白を調整するためのクラス */
+.content {
+  max-width: 800px; /* 最大幅 */
+  margin: 20px auto; /* 上下の余白20px、自動で中央寄せ */
+  padding: 15px; /* 内部余白 */
+  background-color: rgba(255, 255, 255, 0.9); /* 背景色（白で少し透けてる） */
+  border-radius: 8px; /* 角丸 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ボックスシャドウ */
+}
+
+/* 画像の縁取り */
+.bordered {
+  border: 1px solid #333; /* 5pxの黒い縁取り */
+  padding: 0px; /* 画像と縁取りの間に余白 */
+}
+
+/* 画像だけ中央に*/
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/* 画像を比率で小さくする*/
+.half-image {
+  width: 50%;
+  height: auto;  /* ← アスペクト比（縦横比）を保つ */
+  display: block;
+  margin: 0 auto;
+}
+
+/* 文章をセンタリングする*/
+.center-part {
+  display: block;
+  text-align: center;
+}
+
+/*画像にカーソルを合わせたときに反応させる*/
+img {
+  cursor: pointer;
+}
